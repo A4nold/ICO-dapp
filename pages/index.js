@@ -208,7 +208,8 @@ export default function Home(){
       //set loading to false
       setLoading(false);
 
-      window.alert("Successfully minted ${amount} Crypto Devs Tokens");
+      var msg = "Successfully minted ${amount} Crypto Devs Tokens"
+      window.alert(msg);
 
       await getBalanceOfCryptoDevTokens();
       await getTotalTokensMinted();
